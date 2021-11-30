@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/page-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/google.css">
+    <title>Google - результаты поиска</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <header id="header">
+            <div class="row search-row">
+                <div class="logo">
+                    <a href="google.html">
+                        <img src="img/googlelogo.png" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="search-input">
+					<input onkeydown="" value='кредит онлайн'>
+                        <div class="search-icons">
+							<div onclick="this.parentNode.parentNode.getElementsByTagName('INPUT')[0].value='credit';" style='cursor: pointer; display: inline-block; padding: 10px 5px'><img src="img/menu-close-grey.png" alt=""></div>
+                            <hr class="vertical-line">
+                            <img src="img/tia.png" alt="">
+                            <img src="img/9351_GoogleSpeak.png" class="mic" alt="">
+                            <svg style="cursor: pointer" onclick="g_keydown(this.parentNode.parentNode.getElementsByTagName('INPUT')[0]);" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="account">
+                    <svg class="gb_cf" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                    <button class="btn">Войти</button>
+                </div>
+            </div>
+            <div class="search-mobile-row">
+                <div class="row">
+                    <svg style="fill:#757575;width:24px;height:24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                    <div class="logo">
+                        <a href="google.html">
+                            <img src="img/googlelogo.png" alt="">
+                        </a>
+                    </div>
+                    <button class="btn">Войти</button>
+                </div>
+                <div class="row">
+                    <div class="search-input">
+                        <div class="search-icons">
+                            <svg style="cursor: pointer" onclick="g_keydown(this.parentNode.getElementsByTagName('INPUT')[0]);" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+							<input onkeydown="if ((event.keyCode == 13) && (this.value.trim())) window.location.assign('/google?p='+this.value.replace(/\s+/g, '+'))" value=''>
+                            <img src="img/9351_GoogleSpeak.png" class="mic" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tabs">
+                <ul>
+                    <a href="google.html"><li class="active">
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59" fill="#4285F4"></path></svg>
+                        <p>Все</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"></path></svg>
+                        <p>Картинки</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg>
+                        <p>Видео</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg>
+                        <p>Новости</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <svg focusable="false" viewBox="0 0 16 16"><path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path></svg>
+                        <p>Карты</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                        <p>Ещё</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <p>Настройки</p>
+                    </li></a>
+                    <a href="google.html"><li>
+                        <p>Инструменты</p>
+                    </li></a>
+                </ul>
+            </div>
+            <p class="result">Результатов: примерно 361 000 (0,47 сек.)</p>
+        </header>
+        <main id="main">
+            <div class="container">
+                <div class="search-result">
+				
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/creditplus.ua/kp6cz7ja95"><span>Реклама</span>creditplus.com.ua</a><a href="https://go.goodaff.eu/creditplus.ua/kp6cz7ja95" class="main-link">Кредит онлайн без отказа [Украина] ᐈ Credit Plus</a>
+                        <p>CreditPlus сервис подбора выгодного кредита онлайн на карту без отказа ➥ без справок и проверок от 0% ставка. моментальная выдача</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><span>Реклама</span>www.credit7.ua</a><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95" class="main-link">Кредит На Карту без Справок - До 15 000 грн.</a>
+                        <p><b>Кредит на карту</b> - просто, быстро и удобно. Выгодные условия. Удобно погашать. Первый займ - бесплатно. Безопасно. Быстрая выдача. Без справок о доходах, Без поручителей.</p>
+								<div class="quick-links">
+									<ul><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><li>Как оформить кредит<hr></li></a><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><li>Ставка 0.01%<hr></li></a>	</ul>
+								</div></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95"><span>Реклама</span>www.ccloan.ua/онлайн_кредит/</a><a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95" class="main-link">Лучший О% кредит на карту Nо.1 - 5000+ грн одобряем за 5 мин</a>
+                        <p><b>Кредит онлайн</b>. Круглосуточно. Одобряем сразу. С любой кредитной историей. Успей на акцию. Получи от Ccloan <b>Кредит</b> под 0.01% без справок и поручителей за 10 минут</p></div>
+					  <div class="search-item">
+                        <a href="https://go.goodaff.eu/money4you.com.ua/kp6cz7ja95"><img src="img/money4you1.ico" alt="">money4you.ua<a href="https://go.goodaff.eu/money4you.com.ua/kp6cz7ja95" class="main-link">Кредит на карту онлайн до 15 000 ₴ - Ставка 0%</a>
+                        <p>Швидкі кредити онлайн на карту! 0% для нових клієнтів ✓ Безпечно ✓ Просто ✓ Цілодобово! Швидкий онлайн кредит в Money4You™!</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/moneyveo.ua/kp6cz7ja95"><img src="img/moneyveo1.png" alt="">moneyveo.ua<a href="https://go.goodaff.eu/moneyveo.ua/kp6cz7ja95" class="main-link">Онлайн кредит на карту ᐈ Взять кредит онлайн на карту</a>
+                        <p>MoneyVeo Оформить <b>онлайн кредит</b> ПРОСТО ✔️ БЫСТРО ✔️ ВЫГОДНО ✔️ Выдаем 24/7. Первый под 0,01 %. За ⏳ 5 минут. Без звонков, отказа</p></div>
+					<div class="search-item">
+                        <a href="https://go.goodaff.eu/tengo.com.ua/kp6cz7ja95"><img src="img/tengo.png" alt="">tengo.ua<a href="https://go.goodaff.eu/tengo.com.ua/kp6cz7ja95" class="main-link">Кредит на карту круглосуточно 24/7 без отказа - Tengo</a>
+                        <p>Кредит в компании Tengo. Займ на карту до 【10000 ₴】 под 0.01%. на 30 дней ➤ Вход в личный кабинет.  Онлайн-заявка за 15 минут.</p></div>
+
+					<div class="search-item">
+		
+                        <a href="https://go.goodaff.eu/creditkasa.ua/kp6cz7ja95"><img src="img/creditkasa1.ico" alt="">kreditkasa.ua<a href="https://go.goodaff.eu/creditkasa.ua/kp6cz7ja95" class="main-link">Кредит онлайн на карту в Украине всего за 7 минут</a>
+                        <p>Кредит Каса от 500 до 15000 грн. Получи деньги на карту за 7 минут. Оформляй Заявку! до 4 000 грн на картку без вопросов</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/cashberry.com.ua/kp6cz7ja95"><img src="img/cashberry1.png" alt="">www.cashberry.ua<a href="https://go.goodaff.eu/cashberry.com.ua/kp6cz7ja95" class="main-link">Мгновенный кредит онлайн - Кредит под 0,01% на карту</a>
+                        <p><b>Кредиты на карту</b> любого банка Украины. Работаем круглосуточно. <b>Кредит</b> 0% Займ под 0,01% Моментальный <b>кредит</b>. Не выходя из дома. Без отказа. Без справки о доходах. <b>Кредит</b> без процентов. На любые цели. Без процентов. <b>Кредит</b> -100%.</p></div>
+					
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/alexcredit.ua/kp6cz7ja95"><img src="img/alexcredit1.png" alt="">alexcredit.com.ua<a href="https://go.goodaff.eu/alexcredit.ua/kp6cz7ja95" class="main-link">АлексКредит- Кредит Онлайн - Без перевірок 100%</a>
+                        <p>До 10 000 грн. Без зайвих питань. Будь-яка історія. Миттєвий переказ на картку! С 18 років. 24/7. Онлайн заявка.</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/eurogroshi.ua/kp6cz7ja95"><img src="img/fav.png" alt="">www.eurogroshi.com.ua<a href="https://go.goodaff.eu/eurogroshi.ua/kp6cz7ja95" class="main-link">Кредиты Онлайн На Карту - Первые 5000 грн Выдаём Всем</a>
+                        <p>Легкие условия получения денег и быстрое одобрение заявок. Без поручителей и справок. Получите <b>первый кредит</b> на супер условиях. Без скрытых комиссий.</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95"><img src="img/ccloan1.ico" alt="">ccloan.ua<a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95" class="main-link">Кредит онлайн на карту: Оформить онлайн кредит в CCLOAN</a>
+                        <p><b>Кредиты онлайн</b>: 💰 быстрые деньги на 💳 карту. Работаем круглосуточно, решение по заявке за 15 минут - Ccloan.</p></div>
+					 
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/creditplus.ua/kp6cz7ja95"><span>Реклама</span>creditplus.com.ua</a><a href="https://go.goodaff.eu/creditplus.ua/kp6cz7ja95" class="main-link">Кредит онлайн без отказа [Украина] ᐈ Credit Plus</a>
+                        <p>CreditPlus сервис подбора выгодного кредита онлайн на карту без отказа ➥ без справок и проверок от 0% ставка. моментальная выдача</p></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><span>Реклама</span>www.credit7.ua</a><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95" class="main-link">Кредит На Карту без Справок - До 15 000 грн.</a>
+                        <p><b>Кредит на карту</b> - просто, быстро и удобно. Выгодные условия. Удобно погашать. Первый займ - бесплатно. Безопасно. Быстрая выдача. Без справок о доходах, Без поручителей.</p>
+								<div class="quick-links">
+									<ul><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><li>Как оформить кредит<hr></li></a><a href="https://go.goodaff.eu/credit7.ua/kp6cz7ja95"><li>Ставка 0.01%<hr></li></a>	</ul>
+								</div></div>
+					 <div class="search-item">
+                        <a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95"><span>Реклама</span>www.ccloan.ua/онлайн_кредит/</a><a href="https://go.goodaff.eu/ccloan.ua/kp6cz7ja95" class="main-link">Лучший О% кредит на карту Nо.1 - 5000+ грн одобряем за 5 мин</a>
+                        <p><b>Кредит онлайн</b>. Круглосуточно. Одобряем сразу. С любой кредитной историей. Успей на акцию. Получи от Ccloan <b>Кредит</b> под 0.01% без справок и поручителей за 10 минут</p></div>
+					 <div class="search-item"></div>
+                
+                <div class="search-pagination">
+                    <img src="img/foot_google-min.png" class="foot-google" alt="">
+                    <ul>
+                        <a href="index.html" class="active"><li>1</li></a>
+                        <a href="index.html"><li>2</li></a>
+                        <a href="index.html"><li>3</li></a>
+                        <a href="index.html"><li>4</li></a>
+                        <a href="index.html"><li>5</li></a>
+                        <a href="index.html"><li>6</li></a>
+                        <a href="index.html"><li>7</li></a>
+                        <a href="index.html"><li>8</li></a>
+                        <a href="index.html"><li>9</li></a>
+                        <a href="index.html"><li>10</li></a>
+                        <a href="index.html"><li>Следующая</li></a>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <ul>
+                    <a href="index.html"><li>Справка</li></a>
+                    <a href="index.html"><li>Оставить отзыв</li></a>
+                    <a href="index.html"><li>Конфиденциальность</li></a>
+                    <a href="index.html"><li>Условия</li></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
